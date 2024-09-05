@@ -1,6 +1,7 @@
 # UniAni
 
 Bem-vindo ao projeto *UniAni*! Este é um site dedicado a fornecer sinopses detalhadas e informações sobre uma variedade de animes. 
+
 O objetivo é criar um recurso útil para fãs de anime que procuram explorar novos títulos e entender melhor suas tramas.
 
 ## 🚀 Funcionalidades
@@ -15,9 +16,9 @@ O objetivo é criar um recurso útil para fãs de anime que procuram explorar no
 - *CSS:* Estilização e layout do site.
 - *JavaScript (opcional):* Para futuras interatividades e funcionalidades avançadas.
 
-## 🤝 Contribuição
+## 🤝 Contribuidores
 
 
 ## 📁 Estrutura do Projeto
 
-A estrutura do projeto é a seguinte:
+
