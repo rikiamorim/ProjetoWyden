@@ -18,7 +18,8 @@ O objetivo é criar um recurso útil para fãs de anime que procuram explorar no
 
 ## 🤝 Contribuidores
 
+WIP
 
 ## 📁 Estrutura do Projeto
 
-
+WIP
