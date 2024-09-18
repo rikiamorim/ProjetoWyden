@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Universidade dos Animes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .login-button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .login-button:hover {
+            background-color: #ff4b39;
+        }
+
+        main .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .login-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .login-form button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #ff4b39;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>UniAni</h1>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <a href="#" class="login-button">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    <input type="text" name="username" placeholder="Usuário" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AnimeList. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
