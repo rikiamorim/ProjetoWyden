@@ -1,30 +1,179 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniAni - Sinopses de Animes</title>
+    <title>Universidade dos animes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .login-button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .login-button:hover {
+            background-color: #ff4b39;
+        }
+
+        main .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            background: #fff;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .anime-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .anime-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 150px;
+        }
+
+        .anime-item img {
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .filter-label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>UniAni</h1>
-        <p>Seu portal para sinopses de animes</p>
+        <nav>
+            <div class="container">
+                <h1>UniAni</h1>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <a href="#" class="login-button">Login</a>
+            </div>
+        </nav>
     </header>
+    
     <main>
-        <h2>Sinopses Recentes</h2>
-        <div>
-            <h3>Nome do Anime 1</h3>
-            <p>Sinopse breve do Anime 1. Adicione uma descrição curta do anime aqui.</p>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>Filtros de Gênero</h2>
+                <label class="filter-label">
+                    <input type="checkbox" name="genre" value="acao"> Ação
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" name="genre" value="aventura"> Aventura
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" name="genre" value="comedia"> Comédia
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" name="genre" value="romance"> Romance
+                </label>
+                <!-- Adicione mais opções conforme necessário -->
+            </aside>
+            
+            <section class="content">
+                <section class="intro">
+                    <h2>Bem-vindo ao AnimeList</h2>
+                    <p>Encontre os melhores animes e mangas em um só lugar!</p>
+                </section>
+                
+                <section class="content">
+                    <h2>Em Alta</h2>
+                    <div class="anime-list">
+                        <div class="anime-item">
+                            <img src="https://via.placeholder.com/150" alt="Anime 1">
+                            <h3>Anime 1</h3>
+                        </div>
+                        <div class="anime-item">
+                            <img src="https://via.placeholder.com/150" alt="Anime 2">
+                            <h3>Anime 2</h3>
+                        </div>
+                        <!-- Adicione mais itens conforme necessário -->
+                    </div>
+                </section>
+            </section>
         </div>
-        <div>
-            <h3>Nome do Anime 2</h3>
-            <p>Sinopse breve do Anime 2. Adicione uma descrição curta do anime aqui.</p>
-        </div>
-        <!-- Adicione mais sinopses de animes aqui -->
     </main>
+    
     <footer>
-        <p>&copy; 2024 UniAni. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 AnimeList. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
-
