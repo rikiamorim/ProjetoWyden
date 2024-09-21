@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidade dos animes</title>
+    <title>Universidade dos Animes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #dddddd;
         }
 
         header {
@@ -66,10 +66,25 @@
         }
 
         .sidebar {
-            width: 20%;
+            width: 10%;
             background: #fff;
             padding: 20px;
-            border-right: 1px solid #ddd;
+            border-right: 2px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: calc(60vh - 60px);
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        .filter-label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #333;
         }
 
         .content {
@@ -95,6 +110,23 @@
             max-width: 100%;
         }
 
+        .submit-button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            margin-top: auto;
+        }
+
+        .submit-button:hover {
+            background-color: #ff4b39;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -104,11 +136,6 @@
             width: 100%;
             bottom: 0;
         }
-
-        .filter-label {
-            display: block;
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 <body>
@@ -117,12 +144,11 @@
             <div class="container">
                 <h1>UniAni</h1>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Animes</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
-                <a href="#" class="login-button">Login</a>
+                <a href="login.html" class="login-button">Login</a>
             </div>
         </nav>
     </header>
@@ -144,12 +170,14 @@
                     <input type="checkbox" name="genre" value="romance"> Romance
                 </label>
                 <!-- Adicione mais opções conforme necessário -->
+                
+                <a href="formulario.html" class="submit-button">Submeter Resumo</a>
             </aside>
             
             <section class="content">
                 <section class="intro">
-                    <h2>Bem-vindo ao AnimeList</h2>
-                    <p>Encontre os melhores animes e mangas em um só lugar!</p>
+                    <h2>Bem-vindo ao UniAni</h2>
+                    <p>Encontre os melhores resumos de animes feito por fãs em um só lugar!</p>
                 </section>
                 
                 <section class="content">
@@ -172,7 +200,7 @@
     
     <footer>
         <div class="container">
-            <p>&copy; 2024 AnimeList. Todos os direitos reservados.</p>
+            <p>&copy; 2024 UniAni. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
