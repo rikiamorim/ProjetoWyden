@@ -19,7 +19,6 @@
             background-color: #333;
             color: #fff;
             padding: 15px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav .container {
@@ -33,7 +32,6 @@
 
         nav h1 {
             margin: 0;
-            font-size: 1.8em;
         }
 
         nav ul {
@@ -41,18 +39,16 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-wrap: wrap;
         }
 
         nav ul li {
-            margin-left: 20px;
+            margin-left: 10px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            padding: 8px 15px;
-            transition: background 0.3s;
+
         }
 
         nav ul li a:hover {
@@ -101,14 +97,14 @@
         }
 
         .content {
-            width: 75%; 
+            width: 75%; /* Ajustar a largura da área de conteúdo */
             padding: 20px;
         }
 
         .anime-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: left; 
+            justify-content: left; /* Mantém o espaçamento entre os itens */
         }
 
         .anime-item {
@@ -117,8 +113,8 @@
             margin: 10px;
             padding: 10px;
             text-align: center;
-            width: fit-content; 
-            box-sizing: content-box; 
+            width: fit-content; /* Dois itens por linha */
+            box-sizing: content-box; /* Para incluir padding e borda na largura total */
         }
 
         .anime-item img {
@@ -178,13 +174,14 @@
             }
 
             nav h1 {
-                font-size: 1.5em;
+                font-size: 1em;
             }
 
             nav ul {
-                flex-direction: column;
+                flex-direction: row;
             }
         }
+        
     </style>
 </head>
 <body>
