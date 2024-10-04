@@ -10,24 +10,30 @@
             margin: 0;
             padding: 0;
             background-color: #dddddd;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav .container {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         nav h1 {
             margin: 0;
+            font-size: 1.8em;
         }
 
         nav ul {
@@ -35,6 +41,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-wrap: wrap;
         }
 
         nav ul li {
@@ -44,6 +51,13 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            padding: 8px 15px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 111, 97, 0.6);
+            border-radius: 4px;
         }
 
         .login-button {
@@ -59,21 +73,20 @@
             background-color: #ff4b39;
         }
 
-        main .container {
-            width: 80%;
+        main {
+            flex: 1;
+            width: 90%;
             margin: 20px auto;
             display: flex;
         }
 
         .sidebar {
-            width: 10%;
+            width: 25%;
             background: #fff;
             padding: 20px;
             border-right: 2px solid #ddd;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            height: calc(60vh - 60px);
         }
 
         .sidebar h2 {
@@ -88,13 +101,14 @@
         }
 
         .content {
-            width: 80%;
+            width: 75%;
             padding: 20px;
         }
 
         .anime-list {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
 
         .anime-item {
@@ -103,7 +117,8 @@
             margin: 10px;
             padding: 10px;
             text-align: center;
-            width: 150px;
+            width: calc(50% - 20px);
+            box-sizing: border-box;
         }
 
         .anime-item img {
@@ -132,9 +147,39 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
             width: 100%;
-            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 2px solid #ddd;
+                margin-bottom: 20px;
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .anime-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .anime-item {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            nav h1 {
+                font-size: 1.5em;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -169,8 +214,6 @@
                 <label class="filter-label">
                     <input type="checkbox" name="genre" value="romance"> Romance
                 </label>
-                <!-- Adicione mais opções conforme necessário -->
-                
                 <a href="formulario.html" class="submit-button">Submeter Resumo</a>
             </aside>
             
@@ -180,7 +223,7 @@
                     <p>Encontre os melhores resumos de animes feito por fãs em um só lugar!</p>
                 </section>
                 
-                <section class="content">
+                <section>
                     <h2>Em Alta</h2>
                     <div class="anime-list">
                         <div class="anime-item">
@@ -190,6 +233,14 @@
                         <div class="anime-item">
                             <img src="https://via.placeholder.com/150" alt="Anime 2">
                             <h3>Anime 2</h3>
+                        </div>
+                        <div class="anime-item">
+                            <img src="https://via.placeholder.com/150" alt="Anime 3">
+                            <h3>Anime 3</h3>
+                        </div>
+                        <div class="anime-item">
+                            <img src="https://via.placeholder.com/150" alt="Anime 4">
+                            <h3>Anime 4</h3>
                         </div>
                         <!-- Adicione mais itens conforme necessário -->
                     </div>
