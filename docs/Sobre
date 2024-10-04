@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Universidade dos Animes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .login-button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .login-button:hover {
+            background-color: #ff4b39;
+        }
+
+        main .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 10px 0;
+        }
+
+        .info-card h2 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>UniAni</h1>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <a href="login.html" class="login-button">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="info-card">
+                <h2>Sobre a Universidade dos Animes</h2>
+                <p>A Universidade dos Animes (UniAni) é um espaço dedicado aos amantes da cultura pop japonesa, focando principalmente em animes e mangás. Nosso objetivo é proporcionar um ambiente onde os fãs possam se reunir, aprender e compartilhar suas experiências.</p>
+            </div>
+            <div class="info-card">
+                <h2>Nossos Valores</h2>
+                <p>Na UniAni, acreditamos na importância da inclusão, respeito e criatividade. Valorizamos a diversidade de opiniões e encorajamos a troca de conhecimentos entre nossos membros.</p>
+            </div>
+            <div class="info-card">
+                <h2>O que oferecemos?</h2>
+                <p>Oferecemos uma variedade de cursos, workshops e eventos relacionados a animes, bem como uma comunidade ativa onde os usuários podem interagir e discutir suas séries favoritas.</p>
+            </div>
+            <div class="info-card">
+                <h2>Quem Somos</h2>
+                <p>A Universidade dos Animes (UniAni) é um projeto vinculado ao curso de Análise e Desenvolvimento de Sistemas, oferecido pela UniMetrocamp.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UniAni. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
