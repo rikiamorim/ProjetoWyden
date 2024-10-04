@@ -19,11 +19,12 @@
         }
 
         nav .container {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         nav h1 {
@@ -38,7 +39,7 @@
         }
 
         nav ul li {
-            margin-left: 20px;
+            margin-left: 10px;
         }
 
         nav ul li a {
@@ -60,7 +61,7 @@
         }
 
         main .container {
-            width: 80%;
+            width: 90%;
             margin: 20px auto;
             display: flex;
             justify-content: center;
@@ -99,6 +100,7 @@
             border-radius: 4px;
             font-weight: bold;
             cursor: pointer;
+            width: 100%;
         }
 
         .login-form button:hover {
@@ -110,9 +112,38 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
             width: 100%;
+            position: fixed;
             bottom: 0;
+        }
+
+        @media (max-width: 480px) {
+            .login-form {
+                padding: 15px;
+            }
+
+            .login-form h2 {
+                font-size: 1.5em;
+            }
+
+            .login-form input[type="text"],
+            .login-form input[type="password"] {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .login-form button {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            nav h1 {
+                font-size: 1em;
+            }
+
+            nav ul {
+                flex-direction: row;
+            }
         }
     </style>
 </head>
