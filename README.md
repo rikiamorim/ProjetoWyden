@@ -20,4 +20,5 @@ A proposta é criar uma plataforma acessível e informativa para os fãs do gên
 ## 🤝 Contribuidores
 
 Henrique Gonçalves Amorim 
+
 Matheus Baião Faria
