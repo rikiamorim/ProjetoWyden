@@ -9,7 +9,6 @@ A proposta é criar uma plataforma acessível e informativa para os fãs do gên
 - *Imagens dos Animes:* Inclusão de imagens representativas de cada anime, enriquecendo a experiência visual do usuário.
 - *Informações Adicionais:* Disponibilização de dados relevantes, como gêneros, estúdios de produção e outras especificações que complementam o entendimento sobre cada obra.
 
-- 
 ## 🛠 Tecnologias Utilizadas
 
 - *HTML:* Utilizado para a construção da estrutura básica do site.
