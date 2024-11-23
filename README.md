@@ -1,6 +1,7 @@
 # UniAni - Universidade dos Animes
 
 Seja bem-vindo ao projeto UniAni! Este site foi desenvolvido com o objetivo de fornecer informações abrangentes e sinopses detalhadas sobre uma ampla gama de animes. 
+
 A proposta é criar uma plataforma acessível e informativa para os fãs do gênero, facilitando a descoberta de novos títulos e promovendo uma compreensão mais profunda das tramas.
 
 ## 🚀 Funcionalidades
