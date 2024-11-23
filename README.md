@@ -1,25 +1,23 @@
-# UniAni
+# UniAni - Universidade dos Animes
 
-Bem-vindo ao projeto *UniAni*! Este é um site dedicado a fornecer sinopses detalhadas e informações sobre uma variedade de animes. 
-
-O objetivo é criar um recurso útil para fãs de anime que procuram explorar novos títulos e entender melhor suas tramas.
+Seja bem-vindo ao projeto UniAni! Este site foi desenvolvido com o objetivo de fornecer informações abrangentes e sinopses detalhadas sobre uma ampla gama de animes. 
+A proposta é criar uma plataforma acessível e informativa para os fãs do gênero, facilitando a descoberta de novos títulos e promovendo uma compreensão mais profunda das tramas.
 
 ## 🚀 Funcionalidades
 
-- *Exibição de Sinopses:* Mostre resumos detalhados das histórias de diversos animes.
-- *Imagens dos Animes:* Exiba imagens relacionadas aos animes para uma visualização mais rica.
-- *Informações Adicionais:* Inclua gêneros e outras informações relevantes sobre cada anime.
+- *Exibição de Sinopses:* Apresentação de resumos detalhados das histórias dos animes, proporcionando uma visão geral das tramas.
+- *Imagens dos Animes:* Inclusão de imagens representativas de cada anime, enriquecendo a experiência visual do usuário.
+- *Informações Adicionais:* Disponibilização de dados relevantes, como gêneros, estúdios de produção e outras especificações que complementam o entendimento sobre cada obra.
 
+- 
 ## 🛠 Tecnologias Utilizadas
 
-- *HTML:* Estrutura do site.
-- *CSS:* Estilização e layout do site.
-- *JavaScript (opcional):* Para futuras interatividades e funcionalidades avançadas.
+- *HTML:* Utilizado para a construção da estrutura básica do site.
+- *CSS:* Responsável pela estilização e layout visual da plataforma.
+- *Bootstrap:* Framework CSS que facilita o desenvolvimento de layouts responsivos e modernos, garantindo que o site se adapte adequadamente a diferentes dispositivos.
+- *JavaScript:* Utilizado para implementar funcionalidades interativas e dinâmicas no site, como navegação e atualizações de conteúdo em tempo real, melhorando a experiência do usuário.
 
 ## 🤝 Contribuidores
 
-WIP
-
-## 📁 Estrutura do Projeto
-
-WIP
+Henrique Gonçalves Amorim 
+Matheus Baião Faria
