@@ -3,29 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universidade dos Animes - Adicionar Sinopse</title>
+    <title>Universidade dos Animes</title>
+    <link rel="icon" href="UA-logo.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="formulario.css">
 
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1>UniAni</h1>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="Sobre.html">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-                <a href="login.html" class="login-button">Login</a>
-            </div>
-        </nav>
-    </header>
+    <div id="header-container"></div>
     
     <main>
         <div class="content">
             <h2>Adicionar Sinopse do Anime</h2>
-            <form action="https://webhook.site/7ede55f7-b280-424f-9507-6418d227b89d" method="POST">
+            <form action="form.php" method="POST">
                 <div class="form-group">
                     <label for="nome">Nome*</label>
                     <input type="text" id="nome" name="nome" required>
@@ -41,7 +31,13 @@
                         <option value="acao">Ação</option>
                         <option value="aventura">Aventura</option>
                         <option value="comedia">Comédia</option>
+                        <option value="drama">Drama</option>
+                        <option value="fantasia">Fantasia</option>
                         <option value="romance">Romance</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                        <option value="shonen">Shonen</option>
+                        <option value="suspense">Suspense</option>
+                        <option value="terror">Terror</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -54,6 +50,7 @@
                 </div>
                 <button type="submit" class="submit-button">Adicionar Resumo</button>
             </form>
+            
         </div>
     </main>
     
@@ -62,5 +59,18 @@
             <p>&copy; 2024 UniAni. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Erro ao carregar o header:', error);
+            });
+    </script>
 </body>
 </html>
