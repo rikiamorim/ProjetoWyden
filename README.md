@@ -17,10 +17,9 @@ A proposta é criar uma plataforma acessível e informativa para os fãs do gên
 - *Bootstrap:* Framework CSS que facilita o desenvolvimento de layouts responsivos e modernos, garantindo que o site se adapte adequadamente a diferentes dispositivos.
 - *JavaScript:* Utilizado para implementar funcionalidades interativas e dinâmicas no site, como navegação e atualizações de conteúdo em tempo real, melhorando a experiência do usuário.
 - *SQLite:* Sistema de gerenciamento de banco de dados leve e eficiente, utilizado para armazenar e gerenciar os dados da plataforma de forma local e rápida.
+- *PHP:* Linguagem de programação server-side utilizada para criar funcionalidades dinâmicas no servidor, como processamento de formulários, autenticação de usuários e interação com o banco de dados, possibilitando uma plataforma interativa e personalizada.
 
 
 ## 🤝 Contribuidores
 
 Henrique Gonçalves Amorim 
-
-Matheus Baião Faria
