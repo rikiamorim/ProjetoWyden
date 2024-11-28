@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidade dos Animes</title>
+    <link rel="icon" href="frontend\UA-logo.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="frontend\sobre.css">
+
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <main>
+        <div class="container">
+            <div class="info-card">
+                <h2>Sobre a Universidade dos Animes</h2>
+                <p>A Universidade dos Animes (UniAni) é um espaço dedicado aos amantes da cultura pop japonesa, focando principalmente em animes e mangás. Nosso objetivo é proporcionar um ambiente onde os fãs possam se reunir, aprender e compartilhar suas experiências.</p>
+            </div>
+            <div class="info-card">
+                <h2>Nossos Valores</h2>
+                <p>Na UniAni, acreditamos na importância da inclusão, respeito e criatividade. Valorizamos a diversidade de opiniões e encorajamos a troca de conhecimentos entre nossos membros.</p>
+            </div>
+            <div class="info-card">
+                <h2>O que oferecemos?</h2>
+                <p>Oferecemos uma variedade de cursos, workshops e eventos relacionados a animes, bem como uma comunidade ativa onde os usuários podem interagir e discutir suas séries favoritas.</p>
+            </div>
+            <div class="info-card">
+                <h2>Quem Somos</h2>
+                <p>A Universidade dos Animes (UniAni) é um projeto vinculado ao curso de Análise e Desenvolvimento de Sistemas, oferecido pela UniMetrocamp.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 UniAni. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        fetch('backend\header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Erro ao carregar o header:', error);
+            });
+    </script>
+</body>
+</html>
